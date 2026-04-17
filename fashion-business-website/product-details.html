@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | The Atelier</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header id="main-header" class="solid-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">The Atelier</a>
+            <button class="hamburger" id="hamburger-menu" aria-label="Toggle Navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="shop.html" class="nav-link active">Shop</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-padding fade-in" style="margin-top: 80px;">
+            <div class="container">
+                <!-- Product Details Layout -->
+                <div class="grid-2" style="align-items: start;">
+                    <div class="product-gallery">
+                        <img id="detail-image" src="images/product1.png" alt="Product Image" style="width: 100%; object-fit: cover; border: 1px solid var(--light-gray);">
+                    </div>
+                    
+                    <div class="product-specs">
+                        <span style="color: var(--accent-color); text-transform: uppercase; font-size: 0.9rem; font-weight: 600; margin-bottom: 10px; display: block;" id="detail-category">Accessories</span>
+                        <h1 id="detail-title" style="margin-bottom: 20px; font-size: 2.5rem;">Architectural Handbag</h1>
+                        <p class="price" id="detail-price" style="font-size: 1.5rem; margin-bottom: 30px;">$1,200</p>
+                        
+                        <p style="margin-bottom: 30px; line-height: 1.8; color: #555;">Handcrafted from premium structured leather, this piece is a testament to the intersection of modern minimalist architecture and traditional leatherwork. Designed to hold your essentials securely while providing a bold statement of uncompromising quality.</p>
+                        
+                        <div style="margin-bottom: 30px; border-bottom: 1px solid var(--light-gray); padding-bottom: 30px;">
+                            <label style="display: block; font-weight: 600; margin-bottom: 10px; text-transform: uppercase; font-size: 0.85rem;">Quantity</label>
+                            <div style="display: flex; gap: 15px;">
+                                <input type="number" value="1" min="1" style="width: 80px; padding: 12px; text-align: center; border: 1px solid var(--light-gray); font-family: var(--font-body); outline: none;">
+                                <button class="btn btn-primary" style="flex: 1;">Add to Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="product-metadata" style="font-size: 0.9rem; color: #555;">
+                            <p style="margin-bottom: 5px;"><strong>Availability:</strong> <span style="color: green;">In Stock</span></p>
+                            <p style="margin-bottom: 5px;"><strong>SKU:</strong> ATLR-1001</p>
+                            <p><strong>Shipping:</strong> Complimentary Standard Shipping</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Features Section -->
+        <section class="section-padding bg-light fade-in">
+            <div class="container text-center">
+                <h2 style="margin-bottom: 40px;">Product Details</h2>
+                <div class="grid-3">
+                    <div class="service-icon-card">
+                        <i class="fa-solid fa-gem"></i>
+                        <h3>Premium Materials</h3>
+                        <p>Constructed using only the finest sourced textiles and leathers curated globally.</p>
+                    </div>
+                    <div class="service-icon-card">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <h3>Structural Design</h3>
+                        <p>Built with longevity in mind, prioritizing form retention over passing trends.</p>
+                    </div>
+                    <div class="service-icon-card">
+                        <i class="fa-solid fa-paintbrush"></i>
+                        <h3>Hand Finished</h3>
+                        <p>Each edge is meticulously painted and polished locally in our atelier.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid fade-in">
+                <div class="footer-col">
+                    <h3>The Atelier</h3>
+                    <p>Crafting timeless elegance for the modern individual.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Information</h3>
+                    <ul class="footer-links">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Join the Inner Circle</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 THE DIGITAL ATELIER. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = urlParams.get('id');
+            const productTitle = urlParams.get('title');
+            const productPrice = urlParams.get('price');
+            const productImg = urlParams.get('img');
+            
+            if (productTitle) document.getElementById('detail-title').innerText = productTitle;
+            if (productPrice) document.getElementById('detail-price').innerText = productPrice;
+            if (productImg) document.getElementById('detail-image').src = productImg;
+        });
+    </script>
+</body>
+</html>

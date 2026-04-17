@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | The Atelier</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header id="main-header" class="solid-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">The Atelier</a>
+            <button class="hamburger" id="hamburger-menu" aria-label="Toggle Navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+
+                    <li><a href="shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                    <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header fade-in">
+            <div class="container">
+                <h1>Editorial</h1>
+            </div>
+        </section>
+
+        <section class="section-padding bg-light fade-in">
+            <div class="container blog-layout">
+                
+                <div class="blog-main">
+                    <article class="blog-card" data-category="lifestyle">
+                        <img src="images/blog1.png" alt="Blog 1">
+                        <div class="blog-content">
+                            <span class="blog-date">Oct 12, 2026</span>
+                            <h3 class="blog-title">The Minimalist Wardrobe Essentials for Winter</h3>
+                            <p style="margin-bottom: 20px; color: #555;">Discover the key pieces that build a structural and elegant cold-weather array, focusing on cashmere and wool blends...</p>
+                            <a href="blog.html?post=minimalist" class="btn btn-primary">Read More</a>
+                        </div>
+                    </article>
+                    
+                    <article class="blog-card" data-category="design">
+                        <img src="images/portfolio1.png" alt="Blog 2">
+                        <div class="blog-content">
+                            <span class="blog-date">Sep 24, 2026</span>
+                            <h3 class="blog-title">Behind The Scenes: The Atelier Paris Flagship</h3>
+                            <p style="margin-bottom: 20px; color: #555;">Step inside our newest architectural wonder and experience fashion as sculptural art...</p>
+                            <a href="blog.html?post=behind-scenes" class="btn btn-primary">Read More</a>
+                        </div>
+                    </article>
+                </div>
+
+                <aside class="blog-sidebar">
+                    <div class="sidebar-widget">
+                        <h4>Search</h4>
+                        <form class="search-form" action="blog.html" method="GET">
+                            <input type="text" name="search" placeholder="Search blog...">
+                            <button type="submit"><i class="fa-solid fa-search"></i></button>
+                        </form>
+                    </div>
+                    
+                    <div class="sidebar-widget">
+                        <h4>Categories</h4>
+                        <ul class="filter-group" style="margin: 0;">
+                            <li style="margin-bottom: 10px; border-bottom: 1px solid var(--light-gray); padding-bottom: 5px;"><a href="blog.html?category=design" style="color: #555;">Design (12)</a></li>
+                            <li style="margin-bottom: 10px; border-bottom: 1px solid var(--light-gray); padding-bottom: 5px;"><a href="blog.html?category=lifestyle" style="color: #555;">Lifestyle (8)</a></li>
+                            <li style="margin-bottom: 10px; border-bottom: 1px solid var(--light-gray); padding-bottom: 5px;"><a href="blog.html?category=events" style="color: #555;">Events (4)</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h4>Recent Posts</h4>
+                        <a href="blog.html?post=minimalist" class="recent-post" style="text-decoration: none; color: inherit; display: flex;">
+                            <img src="images/blog1.png" alt="Recent 1">
+                            <div>
+                                <h5>The Minimalist Wardrobe</h5>
+                                <span style="font-size: 0.8rem; color: #777;">Oct 12</span>
+                            </div>
+                        </a>
+                        <a href="blog.html?post=behind-scenes" class="recent-post" style="text-decoration: none; color: inherit; display: flex;">
+                            <img src="images/portfolio1.png" alt="Recent 2">
+                            <div>
+                                <h5>Paris Flagship</h5>
+                                <span style="font-size: 0.8rem; color: #777;">Sep 24</span>
+                            </div>
+                        </a>
+                    </div>
+                </aside>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 THE DIGITAL ATELIER. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
+

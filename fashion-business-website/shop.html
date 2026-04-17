@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | The Atelier</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header id="main-header" class="solid-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">The Atelier</a>
+            <button class="hamburger" id="hamburger-menu" aria-label="Toggle Navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+
+                    <li><a href="shop.html" class="nav-link active">Shop</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header fade-in">
+            <div class="container">
+                <h1>Our Collection</h1>
+            </div>
+        </section>
+
+        <section class="section-padding fade-in">
+            <div class="container shop-layout">
+                
+                <!-- Sidebar Filters -->
+                <aside class="shop-sidebar">
+                    <div class="filter-group">
+                        <h4>Categories</h4>
+                        <ul>
+                            <li><a href="shop.html?category=all">All</a></li>
+                            <li><a href="shop.html?category=men">Men</a></li>
+                            <li><a href="shop.html?category=women">Women</a></li>
+                            <li><a href="shop.html?category=kids">Kids</a></li>
+                            <li><a href="shop.html?category=accessories">Accessories</a></li>
+                        </ul>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Price Filter</h4>
+                        <ul>
+                            <li><a href="shop.html?min=0&max=100">$0 - $100</a></li>
+                            <li><a href="shop.html?min=100&max=500">$100 - $500</a></li>
+                            <li><a href="shop.html?min=500&max=1000">$500 - $1000</a></li>
+                            <li><a href="shop.html?min=1000&max=99999">$1000+</a></li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- Shop Main -->
+                <div class="shop-main">
+                    <div class="shop-topbar">
+                        <p id="shop-result-count">Showing 1â€“6 of 24 results</p>
+                        <div class="sort-dropdown">
+                            <select id="sort-select" onchange="window.location.href=this.value;">
+                                <option value="shop.html">Default sorting</option>
+                                <option value="shop.html?sort=popularity">Sort by popularity</option>
+                                <option value="shop.html?sort=newness">Sort by newness</option>
+                                <option value="shop.html?sort=price_low">Sort by price: low to high</option>
+                                <option value="shop.html?sort=price_high">Sort by price: high to low</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="grid-3">
+                        <!-- Product 1 -->
+                        <article class="product-card" data-category="accessories" data-price="1200" data-popularity="5" data-newness="3">
+                            <div class="product-image-container">
+                                <img src="images/product1.png" alt="Architectural Handbag">
+                            </div>
+                            <div class="product-info">
+                                <h3>Architectural Handbag</h3>
+                                <span class="price">$1,200</span>
+                                <div style="display: flex; gap: 10px;">
+                                    <a href="product-details.html?title=Architectural+Handbag&price=$1,200&img=images/product1.png" class="btn btn-outline-dark" style="flex:1;">Details</a>
+                                    <button class="btn btn-primary" style="flex:1; border: 1px solid var(--accent-color);">Cart</button>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Product 2 -->
+                        <article class="product-card" data-category="women" data-price="850" data-popularity="3" data-newness="5">
+                            <div class="product-image-container">
+                                <img src="images/product2.png" alt="Silk Flow Dress">
+                            </div>
+                            <div class="product-info">
+                                <h3>Silk Flow Dress</h3>
+                                <span class="price">$850</span>
+                                <div style="display: flex; gap: 10px;">
+                                    <a href="product-details.html?title=Silk+Flow+Dress&price=$850&img=images/product2.png" class="btn btn-outline-dark" style="flex:1;">Details</a>
+                                    <button class="btn btn-primary" style="flex:1; border: 1px solid var(--accent-color);">Cart</button>
+                                </div>
+                            </div>
+                        </article>
+                        <!-- Product 3 -->
+                        <article class="product-card" data-category="women" data-price="150" data-popularity="4" data-newness="4">
+                            <div class="product-image-container">
+                                <img src="images/product3.png" alt="Stone Serum">
+                            </div>
+                            <div class="product-info">
+                                <h3>Stone Serum</h3>
+                                <span class="price">$150</span>
+                                <div style="display: flex; gap: 10px;">
+                                    <a href="product-details.html?title=Stone+Serum&price=$150&img=images/product3.png" class="btn btn-outline-dark" style="flex:1;">Details</a>
+                                    <button class="btn btn-primary" style="flex:1; border: 1px solid var(--accent-color);">Cart</button>
+                                </div>
+                            </div>
+                        </article>
+                         <!-- Product 4 -->
+                         <article class="product-card" data-category="men" data-price="1850" data-popularity="1" data-newness="1">
+                            <div class="product-image-container">
+                                <img src="images/hero.png" alt="Tailored Suit Men">
+                            </div>
+                            <div class="product-info">
+                                <h3>Tailored Men Suit</h3>
+                                <span class="price">$1,850</span>
+                                <div style="display: flex; gap: 10px;">
+                                    <a href="product-details.html?title=Tailored+Men+Suit&price=$1,850&img=images/hero.png" class="btn btn-outline-dark" style="flex:1;">Details</a>
+                                    <button class="btn btn-primary" style="flex:1; border: 1px solid var(--accent-color);">Cart</button>
+                                </div>
+                            </div>
+                        </article>
+                         <!-- Product 5 -->
+                         <article class="product-card" data-category="men" data-price="950" data-popularity="2" data-newness="2">
+                            <div class="product-image-container">
+                                <img src="images/team1.png" alt="Executive Coat">
+                            </div>
+                            <div class="product-info">
+                                <h3>Executive Coat</h3>
+                                <span class="price">$950</span>
+                                <div style="display: flex; gap: 10px;">
+                                    <a href="product-details.html?title=Executive+Coat&price=$950&img=images/team1.png" class="btn btn-outline-dark" style="flex:1;">Details</a>
+                                    <button class="btn btn-primary" style="flex:1; border: 1px solid var(--accent-color);">Cart</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <a href="#" class="page-btn"><i class="fa-solid fa-angle-left"></i></a>
+                        <a href="#" class="page-btn active">1</a>
+                        <a href="#" class="page-btn">2</a>
+                        <a href="#" class="page-btn">3</a>
+                        <a href="#" class="page-btn"><i class="fa-solid fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Component is identical to Index -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid fade-in">
+                <div class="footer-col">
+                    <h3>The Atelier</h3>
+                    <p>Crafting timeless elegance for the modern individual.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Information</h3>
+                    <ul class="footer-links">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Join the Inner Circle</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 THE DIGITAL ATELIER. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
+

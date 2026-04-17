@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | The Atelier</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header id="main-header" class="solid-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">The Atelier</a>
+            <button class="hamburger" id="hamburger-menu" aria-label="Toggle Navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+
+                    <li><a href="shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header fade-in">
+            <div class="container">
+                <h1>Professional Gallery</h1>
+            </div>
+        </section>
+
+        <section class="section-padding fade-in">
+            <div class="container">
+                <div class="filter-btns" id="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="men">Men</button>
+                    <button class="filter-btn" data-filter="women">Women</button>
+                    <button class="filter-btn" data-filter="accessories">Accessories</button>
+                    <button class="filter-btn" data-filter="new">New Collection</button>
+                </div>
+
+                <div class="portfolio-gallery" id="portfolio-gallery">
+                    <div class="portfolio-item women new">
+                        <img src="images/product2.png" alt="Model Women">
+                    </div>
+                    <div class="portfolio-item accessories new">
+                        <img src="images/product1.png" alt="Accessories Bag">
+                    </div>
+                    <div class="portfolio-item men">
+                        <img src="images/team1.png" alt="Model Men">
+                    </div>
+                    <div class="portfolio-item accessories">
+                        <img src="images/product3.png" alt="Accessories Stone">
+                    </div>
+                    <div class="portfolio-item men women">
+                        <img src="images/portfolio1.png" alt="Boutique Collection">
+                    </div>
+                    <div class="portfolio-item men new">
+                        <img src="images/hero.png" alt="Model Coat">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid fade-in">
+                <div class="footer-col">
+                    <h3>The Atelier</h3>
+                    <p>Crafting timeless elegance for the modern individual.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 THE DIGITAL ATELIER. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
+

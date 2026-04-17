@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | The Atelier</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-light">
+
+    <header id="main-header" class="solid-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">The Atelier</a>
+            <button class="hamburger" id="hamburger-menu" aria-label="Toggle Navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+
+                    <li><a href="shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header fade-in bg-light">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Reach out to our maison consultants.</p>
+            </div>
+        </section>
+
+        <section class="section-padding fade-in" style="padding-top: 0;">
+            <div class="container contact-grid">
+                
+                <div class="contact-form">
+                    <h2 style="text-align: left; margin-bottom: 30px;">Send a Message</h2>
+                    <form id="contact-form-main" novalidate>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Full Name*" required>
+                            <span class="error-message" id="name-error">Please enter your full name.</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Email Address*" required>
+                            <span class="error-message" id="email-error">Please enter a valid email address.</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" class="form-control" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject*" required>
+                            <span class="error-message" id="subject-error">Please enter a subject.</span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" class="form-control" rows="4" placeholder="Your Message*" required></textarea>
+                            <span class="error-message" id="message-error">Please enter a message.</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Send Message</button>
+                    </form>
+                    <div id="form-success" style="display: none; margin-top: 20px; color: var(--accent-color); font-weight: bold;">
+                        Message received. An attachÃ© will respond shortly.
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <div style="margin-bottom: 30px;">
+                        <h3 style="color: var(--accent-color); font-size: 1.1rem; text-transform: uppercase;">Our Maison</h3>
+                        <p>45 Avenue Montaigne,<br>75008 Paris,<br>France</p>
+                    </div>
+                    <div style="margin-bottom: 30px;">
+                        <h3 style="color: var(--accent-color); font-size: 1.1rem; text-transform: uppercase;">Direct Line</h3>
+                        <p>+33 1 53 67 22 19<br>concierge@theatelier.com</p>
+                    </div>
+                    <div>
+                        <h3 style="color: var(--accent-color); font-size: 1.1rem; text-transform: uppercase;">Business Hours</h3>
+                        <div style="display: flex; justify-content: space-between; max-width: 300px; margin-top: 10px;">
+                            <span>Monday â€“ Friday</span><span>10:00 - 19:00</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; max-width: 300px; margin-top: 5px;">
+                            <span>Saturday</span><span>11:00 - 18:00</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; max-width: 300px; margin-top: 5px;">
+                            <span>Sunday</span><span>Closed</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Google Map Embedded -->
+        <div class="map-container fade-in">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.4927237095696!2d2.302521915674066!3d48.86789497928828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fcc4800311f%3A0xe10688a44ec2fb1d!2sAv.%20Montaigne%2C%20Paris%2C%20France!5e0!3m2!1sen!2sus!4v1683144131568!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 THE DIGITAL ATELIER. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
